@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>لوحة التحكم - د. يقين عامر</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="container">
+                <div class="logo">
+                    <i class="fas fa-tooth"></i>
+                    <h1>لوحة التحكم</h1>
+                </div>
+                <ul class="nav-menu">
+                    <li><a href="index.html">عودة للموقع</a></li>
+                </ul>
+                <div class="hamburger">
+                    <span></span><span></span><span></span>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main class="admin-wrapper" style="padding-top:120px;">
+        <div class="section-header" style="margin-bottom:30px;">
+            <h2>إدارة المحتوى</h2>
+            <div class="divider"></div>
+            <p>إضافة / حذف الأخبار ومراجعة المشتركين في النشرة البريدية (تخزين محلي تجريبي).</p>
+        </div>
+        <div class="admin-grid">
+            <!-- News Management -->
+            <div class="admin-card">
+                <h3><i class="fas fa-newspaper"></i> إدارة الأخبار</h3>
+                <form id="newsForm" class="admin-form">
+                    <input type="text" id="newsTitle" placeholder="عنوان الخبر" required>
+                    <textarea id="newsBody" placeholder="نص مختصر / وصف الخبر" required></textarea>
+                    <input type="text" id="newsCategory" placeholder="التصنيف (فعاليات، تنبيه، عام)" />
+                    <div class="admin-actions">
+                        <button type="submit" class="btn btn-primary">نشر الخبر</button>
+                        <button type="button" id="clearNews" class="btn btn-secondary">مسح كل الأخبار</button>
+                    </div>
+                </form>
+                <div class="news-admin-list" id="adminNewsList">
+                    <!-- يتم ملء قائمة الأخبار هنا -->
+                </div>
+            </div>
+
+            <!-- Subscribers Management -->
+            <div class="admin-card">
+                <h3><i class="fas fa-users"></i> المشتركين بالنشرة</h3>
+                <ul id="subscriberList" class="subscriber-list">
+                    <!-- يتم ملء المشتركين هنا -->
+                </ul>
+                <button type="button" id="clearSubscribers" class="btn btn-secondary" style="margin-top:10px;">مسح كل المشتركين</button>
+            </div>
+        </div>
+        <div style="margin-top:40px; font-size:.75rem; color:#777;">
+            <p>تنبيه أمني: هذه اللوحة تعتمد على التخزين المحلي LocalStorage و ليست حلاً إنتاجياً آمناً. يفضل لاحقاً إضافة نظام دخول (مصادقة) وقاعدة بيانات حقيقية على الخادم.</p>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3><i class="fas fa-tooth"></i> د. يقين عامر</h3>
+                    <p>لوحة إدارة المحتوى للنشرة والأخبار داخل الموقع.</p>
+                </div>
+                <div class="footer-section">
+                    <h3>روابط</h3>
+                    <ul>
+                        <li><a href="index.html">الصفحة الرئيسية</a></li>
+                        <li><a href="#top" onclick="window.scrollTo({top:0,behavior:'smooth'});">أعلى الصفحة</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>ملاحظات</h3>
+                    <ul>
+                        <li>التخزين محلي مؤقت</li>
+                        <li>غير مهيأ للإنتاج</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 د. يقين عامر - لوحة التحكم</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

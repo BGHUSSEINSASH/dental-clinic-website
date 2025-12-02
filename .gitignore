@@ -1,0 +1,12 @@
+# Logs
+*.log
+
+# Firebase local state
+.firebase/
+
+# Node (none currently, precaution)
+node_modules/
+
+# OS files
+Thumbs.db
+.DS_Store
