@@ -1,7 +1,6 @@
 {
   "projects": {
-    "default": "yaqeenamer",
-    "yaqeenamer": "yaqeenamer-73db7"
+    "default": "yaqeenamer-73db7"
   },
   "targets": {},
   "etags": {}
