@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+firebase login<!DOCTYPE html>
 <html lang="ar" dir="rtl">
 <head>
     <meta charset="UTF-8">
@@ -11,6 +11,7 @@
     <meta property="og:locale" content="ar_AR">
     <meta property="og:site_name" content="عيادة د. يقين عامر">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="animations.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body>
@@ -41,49 +42,106 @@
 
     <!-- Hero Section -->
     <section id="home" class="hero">
+        <!-- Animated Particles Background -->
+        <div class="particles-container" id="heroParticles"></div>
+        <!-- Animated Wave -->
+        <div class="hero-wave">
+            <svg viewBox="0 0 1440 120" preserveAspectRatio="none">
+                <path class="wave-path wave-1" d="M0,60 C360,120 720,0 1440,60 L1440,120 L0,120 Z"></path>
+                <path class="wave-path wave-2" d="M0,80 C360,20 720,100 1440,40 L1440,120 L0,120 Z"></path>
+            </svg>
+        </div>
         <div class="hero-content">
-            <h1>د. يقين عامر</h1>
+            <h1 class="glitch-text" data-text="د. يقين عامر">د. يقين عامر</h1>
             <h2>أخصائية طب وجراحة الأسنان</h2>
             <p>خدمة احترافية في الناصرية - ناحية الفجر (محافظة ذي قار) بأحدث التقنيات للحصول على ابتسامة صحية وجميلة</p>
             <div class="hero-buttons">
-                <a href="#contact" class="btn btn-primary">احجز موعد</a>
-                <a href="#services" class="btn btn-secondary">خدماتنا</a>
+                <a href="#contact" class="btn btn-primary btn-animated">احجز موعد</a>
+                <a href="#services" class="btn btn-secondary btn-animated">خدماتنا</a>
             </div>
         </div>
-        <div class="hero-image">
-            <i class="fas fa-teeth-open"></i>
+        <div class="hero-image hero-3d-scene">
+            <!-- 3D Animated Tooth Illustration -->
+            <div class="tooth-3d">
+                <div class="tooth-body">
+                    <div class="tooth-crown">
+                        <div class="tooth-shine"></div>
+                    </div>
+                    <div class="tooth-root tooth-root-1"></div>
+                    <div class="tooth-root tooth-root-2"></div>
+                </div>
+                <div class="tooth-shadow"></div>
+                <div class="tooth-sparkles">
+                    <span class="sparkle sparkle-1">✦</span>
+                    <span class="sparkle sparkle-2">✧</span>
+                    <span class="sparkle sparkle-3">✦</span>
+                    <span class="sparkle sparkle-4">✧</span>
+                    <span class="sparkle sparkle-5">⬥</span>
+                </div>
+            </div>
+            <!-- Orbiting Elements -->
+            <div class="orbit-ring">
+                <div class="orbit-item orbit-item-1"><i class="fas fa-tooth"></i></div>
+                <div class="orbit-item orbit-item-2"><i class="fas fa-smile"></i></div>
+                <div class="orbit-item orbit-item-3"><i class="fas fa-star"></i></div>
+            </div>
         </div>
     </section>
 
     <!-- About Section -->
     <section id="about" class="about">
+        <div class="floating-bg-shapes">
+            <div class="bg-shape bg-shape-1"></div>
+            <div class="bg-shape bg-shape-2"></div>
+            <div class="bg-shape bg-shape-3"></div>
+        </div>
         <div class="container">
-            <div class="section-header">
+            <div class="section-header anim-section-header">
                 <h2>عن الدكتورة يقين عامر</h2>
-                <div class="divider"></div>
+                <div class="divider animated-divider"></div>
             </div>
             <div class="about-content">
                 <div class="about-image">
-                    <div class="image-placeholder">
+                    <div class="image-placeholder anim-3d-card">
                         <i class="fas fa-user-md"></i>
+                        <div class="card-glow"></div>
+                    </div>
+                    <!-- DNA Helix Animation -->
+                    <div class="dna-helix">
+                        <div class="dna-strand" style="--i:0"></div>
+                        <div class="dna-strand" style="--i:1"></div>
+                        <div class="dna-strand" style="--i:2"></div>
+                        <div class="dna-strand" style="--i:3"></div>
+                        <div class="dna-strand" style="--i:4"></div>
+                        <div class="dna-strand" style="--i:5"></div>
+                        <div class="dna-strand" style="--i:6"></div>
                     </div>
                 </div>
                 <div class="about-text">
                     <h3>خبرة ومهارة في خدمتكم</h3>
                     <p>الدكتورة يقين عامر طبيبة أسنان متخصصة تقدم خدمات علاجية وتجملية متقدمة لسكان الناصرية وناحية الفجر في محافظة ذي قار، مع التزام كامل بمعايير التعقيم والأمان وتوفير تجربة مريحة لكل مريض.</p>
                     <div class="qualifications">
-                        <div class="qual-item">
-                            <i class="fas fa-graduation-cap"></i>
+                        <div class="qual-item anim-card-3d" style="--delay: 0s">
+                            <div class="qual-icon-wrap">
+                                <i class="fas fa-graduation-cap"></i>
+                                <div class="icon-pulse"></div>
+                            </div>
                             <h4>المؤهلات العلمية</h4>
                             <p>بكالوريوس طب وجراحة الأسنان</p>
                         </div>
-                        <div class="qual-item">
-                            <i class="fas fa-certificate"></i>
+                        <div class="qual-item anim-card-3d" style="--delay: 0.2s">
+                            <div class="qual-icon-wrap">
+                                <i class="fas fa-certificate"></i>
+                                <div class="icon-pulse"></div>
+                            </div>
                             <h4>التخصصات</h4>
                             <p>طب الأسنان التجميلي والعلاجي</p>
                         </div>
-                        <div class="qual-item">
-                            <i class="fas fa-award"></i>
+                        <div class="qual-item anim-card-3d" style="--delay: 0.4s">
+                            <div class="qual-icon-wrap">
+                                <i class="fas fa-award"></i>
+                                <div class="icon-pulse"></div>
+                            </div>
                             <h4>الخبرة</h4>
                             <p>سنوات من الخبرة المتميزة</p>
                         </div>
@@ -95,68 +153,85 @@
 
     <!-- Services Section -->
     <section id="services" class="services">
+        <div class="animated-bg-grid"></div>
         <div class="container">
-            <div class="section-header">
+            <div class="section-header anim-section-header">
                 <h2>خدماتنا الطبية</h2>
-                <div class="divider"></div>
+                <div class="divider animated-divider"></div>
                 <p>نقدم مجموعة شاملة من خدمات طب الأسنان</p>
             </div>
             <div class="services-grid">
-                <div class="service-card">
-                    <div class="service-icon">
+                <div class="service-card anim-service-card" style="--card-delay: 0s">
+                    <div class="service-icon anim-icon-rotate">
                         <i class="fas fa-tooth"></i>
+                        <div class="icon-ring"></div>
                     </div>
                     <h3>تنظيف الأسنان</h3>
                     <p>تنظيف احترافي شامل لإزالة الجير والبلاك والحفاظ على صحة اللثة</p>
+                    <div class="card-shine"></div>
                 </div>
-                <div class="service-card">
-                    <div class="service-icon">
+                <div class="service-card anim-service-card" style="--card-delay: 0.1s">
+                    <div class="service-icon anim-icon-rotate">
                         <i class="fas fa-fill-drip"></i>
+                        <div class="icon-ring"></div>
                     </div>
                     <h3>حشوات الأسنان</h3>
                     <p>حشوات تجميلية عالية الجودة بمواد آمنة ومتطورة</p>
+                    <div class="card-shine"></div>
                 </div>
-                <div class="service-card">
-                    <div class="service-icon">
+                <div class="service-card anim-service-card" style="--card-delay: 0.2s">
+                    <div class="service-icon anim-icon-rotate">
                         <i class="fas fa-smile-beam"></i>
+                        <div class="icon-ring"></div>
                     </div>
                     <h3>تبييض الأسنان</h3>
                     <p>تبييض احترافي للحصول على ابتسامة ناصعة البياض</p>
+                    <div class="card-shine"></div>
                 </div>
-                <div class="service-card">
-                    <div class="service-icon">
+                <div class="service-card anim-service-card" style="--card-delay: 0.3s">
+                    <div class="service-icon anim-icon-rotate">
                         <i class="fas fa-tooth"></i>
+                        <div class="icon-ring"></div>
                     </div>
                     <h3>تركيبات الأسنان</h3>
                     <p>تيجان وجسور عالية الجودة لاستعادة وظيفة الأسنان</p>
+                    <div class="card-shine"></div>
                 </div>
-                <div class="service-card">
-                    <div class="service-icon">
+                <div class="service-card anim-service-card" style="--card-delay: 0.4s">
+                    <div class="service-icon anim-icon-rotate">
                         <i class="fas fa-x-ray"></i>
+                        <div class="icon-ring"></div>
                     </div>
                     <h3>علاج الجذور</h3>
                     <p>علاج العصب باستخدام أحدث التقنيات الطبية</p>
+                    <div class="card-shine"></div>
                 </div>
-                <div class="service-card">
-                    <div class="service-icon">
+                <div class="service-card anim-service-card" style="--card-delay: 0.5s">
+                    <div class="service-icon anim-icon-rotate">
                         <i class="fas fa-teeth"></i>
+                        <div class="icon-ring"></div>
                     </div>
                     <h3>تقويم الأسنان</h3>
                     <p>تقويم شفاف وتقليدي لتحسين مظهر الأسنان</p>
+                    <div class="card-shine"></div>
                 </div>
-                <div class="service-card">
-                    <div class="service-icon">
+                <div class="service-card anim-service-card" style="--card-delay: 0.6s">
+                    <div class="service-icon anim-icon-rotate">
                         <i class="fas fa-procedures"></i>
+                        <div class="icon-ring"></div>
                     </div>
                     <h3>جراحة الأسنان</h3>
                     <p>خلع الأسنان والضروس المدفونة بأمان تام</p>
+                    <div class="card-shine"></div>
                 </div>
-                <div class="service-card">
-                    <div class="service-icon">
+                <div class="service-card anim-service-card" style="--card-delay: 0.7s">
+                    <div class="service-icon anim-icon-rotate">
                         <i class="fas fa-child"></i>
+                        <div class="icon-ring"></div>
                     </div>
                     <h3>طب أسنان الأطفال</h3>
                     <p>رعاية خاصة ولطيفة لأسنان الأطفال</p>
+                    <div class="card-shine"></div>
                 </div>
             </div>
         </div>
@@ -165,27 +240,51 @@
     <!-- Gallery Section -->
     <section id="gallery" class="gallery">
         <div class="container">
-            <div class="section-header">
+            <div class="section-header anim-section-header">
                 <h2>معرض الصور</h2>
-                <div class="divider"></div>
+                <div class="divider animated-divider"></div>
                 <p>نتائج حقيقية لمرضانا</p>
             </div>
             <div class="gallery-grid">
-                <div class="gallery-item">
-                    <i class="fas fa-image"></i>
+                <div class="gallery-item anim-gallery-item" style="--g-delay: 0s">
+                    <div class="gallery-3d-wrapper">
+                        <i class="fas fa-image"></i>
+                        <div class="gallery-overlay">
+                            <i class="fas fa-search-plus"></i>
+                        </div>
+                    </div>
                     <p>قبل وبعد التبييض</p>
+                    <div class="gallery-shine"></div>
                 </div>
-                <div class="gallery-item">
-                    <i class="fas fa-image"></i>
+                <div class="gallery-item anim-gallery-item" style="--g-delay: 0.15s">
+                    <div class="gallery-3d-wrapper">
+                        <i class="fas fa-image"></i>
+                        <div class="gallery-overlay">
+                            <i class="fas fa-search-plus"></i>
+                        </div>
+                    </div>
                     <p>تركيبات الأسنان</p>
+                    <div class="gallery-shine"></div>
                 </div>
-                <div class="gallery-item">
-                    <i class="fas fa-image"></i>
+                <div class="gallery-item anim-gallery-item" style="--g-delay: 0.3s">
+                    <div class="gallery-3d-wrapper">
+                        <i class="fas fa-image"></i>
+                        <div class="gallery-overlay">
+                            <i class="fas fa-search-plus"></i>
+                        </div>
+                    </div>
                     <p>التقويم الشفاف</p>
+                    <div class="gallery-shine"></div>
                 </div>
-                <div class="gallery-item">
-                    <i class="fas fa-image"></i>
+                <div class="gallery-item anim-gallery-item" style="--g-delay: 0.45s">
+                    <div class="gallery-3d-wrapper">
+                        <i class="fas fa-image"></i>
+                        <div class="gallery-overlay">
+                            <i class="fas fa-search-plus"></i>
+                        </div>
+                    </div>
                     <p>الحشوات التجميلية</p>
+                    <div class="gallery-shine"></div>
                 </div>
             </div>
         </div>
@@ -193,29 +292,42 @@
 
     <!-- Why Choose Us Section -->
     <section class="why-us">
+        <div class="why-us-particles" id="whyUsParticles"></div>
         <div class="container">
-            <div class="section-header">
+            <div class="section-header anim-section-header">
                 <h2>لماذا تختارنا؟</h2>
-                <div class="divider"></div>
+                <div class="divider animated-divider"></div>
             </div>
             <div class="features-grid">
-                <div class="feature">
-                    <i class="fas fa-check-circle"></i>
+                <div class="feature anim-feature" style="--f-delay: 0s">
+                    <div class="feature-icon-3d">
+                        <i class="fas fa-check-circle"></i>
+                        <div class="feature-glow"></div>
+                    </div>
                     <h3>خبرة ومهارة</h3>
                     <p>فريق طبي متخصص وذو خبرة عالية</p>
                 </div>
-                <div class="feature">
-                    <i class="fas fa-microscope"></i>
+                <div class="feature anim-feature" style="--f-delay: 0.2s">
+                    <div class="feature-icon-3d">
+                        <i class="fas fa-microscope"></i>
+                        <div class="feature-glow"></div>
+                    </div>
                     <h3>أحدث التقنيات</h3>
                     <p>استخدام أحدث الأجهزة والتقنيات الطبية</p>
                 </div>
-                <div class="feature">
-                    <i class="fas fa-shield-alt"></i>
+                <div class="feature anim-feature" style="--f-delay: 0.4s">
+                    <div class="feature-icon-3d">
+                        <i class="fas fa-shield-alt"></i>
+                        <div class="feature-glow"></div>
+                    </div>
                     <h3>سلامة وأمان</h3>
                     <p>أعلى معايير التعقيم والسلامة</p>
                 </div>
-                <div class="feature">
-                    <i class="fas fa-clock"></i>
+                <div class="feature anim-feature" style="--f-delay: 0.6s">
+                    <div class="feature-icon-3d">
+                        <i class="fas fa-clock"></i>
+                        <div class="feature-glow"></div>
+                    </div>
                     <h3>مواعيد مرنة</h3>
                     <p>أوقات عمل مناسبة لجميع المرضى</p>
                 </div>
@@ -255,10 +367,15 @@
 
     <!-- Contact Section -->
     <section id="contact" class="contact">
+        <div class="contact-bg-animation">
+            <div class="contact-circle contact-circle-1"></div>
+            <div class="contact-circle contact-circle-2"></div>
+            <div class="contact-circle contact-circle-3"></div>
+        </div>
         <div class="container">
-            <div class="section-header">
+            <div class="section-header anim-section-header">
                 <h2>تواصل معنا</h2>
-                <div class="divider"></div>
+                <div class="divider animated-divider"></div>
                 <p>نحن هنا للإجابة على استفساراتك</p>
             </div>
             <div class="contact-content">
@@ -336,6 +453,11 @@
         </div>
     </section>
 
+    <!-- Scroll to Top Button -->
+    <button class="scroll-top-btn" id="scrollTopBtn" aria-label="العودة للأعلى">
+        <i class="fas fa-chevron-up"></i>
+    </button>
+
     <!-- Footer -->
     <footer>
         <div class="container">
@@ -371,5 +493,6 @@
     </footer>
 
     <script src="script.js"></script>
+    <script src="animations.js"></script>
 </body>
 </html>

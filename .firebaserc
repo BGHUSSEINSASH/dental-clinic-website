@@ -1,5 +1,8 @@
 {
   "projects": {
-    "default": "REPLACE_WITH_FIREBASE_PROJECT_ID"
-  }
+    "default": "yaqeenamer",
+    "yaqeenamer": "yaqeenamer-73db7"
+  },
+  "targets": {},
+  "etags": {}
 }
